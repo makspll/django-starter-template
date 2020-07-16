@@ -9,7 +9,7 @@ def main():
     # Reads .env file in main project directory 
     # so that they can be accessed in 
     # the entire project using os.getenv or os.environ
-    load_dotenv(verbose=True)
+    load_dotenv(verbose=True,overwrite=True)
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'template_project.settings')
 
     try:
