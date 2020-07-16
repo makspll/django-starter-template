@@ -1,7 +1,7 @@
 from split_settings.tools import optional, include
 import os
 
-ENV = os.environ.get("DJANGO_ENV",'dev') 
+ENV = os.environ.get("ENV_NAME",'dev') 
 
 BASE_SETTINGS = [
     'components/common.py',

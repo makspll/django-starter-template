@@ -7,7 +7,7 @@ This kind of setup is very scalable since whitenoise allows you to connect to a 
 This is perfect for hackathons or small websites which will not face a lot of traffic.
 
 ## features
-debugging toolbars, live reload, sass/scss compilation, js/css/html minifying and compression, split settings files
+debugging toolbars, sass/scss compilation, js/css/html minifying and compression, split settings files
 
 check pipfile for package names
 

@@ -1,14 +1,14 @@
-from .components.common import INSTALLED_APPS,MIDDLEWARE
+from template_project.components.common import INSTALLED_APPS,MIDDLEWARE,BASE_DIR
 import debug_toolbar
 from django.urls import path,include
+import os 
 
-INSTALLED_APPS = ['livesync',] + INSTALLED_APPS + [
+INSTALLED_APPS =  INSTALLED_APPS + [
     'debug_toolbar',]
 
 
-# MIDDLEWARE_CLASSES = (
-#     'livesync.core.middleware.DjangoLiveSyncMiddleware',
-# )
+MEDIA_ROOT = os.path.join(BASE_DIR,"media_root")
+
 ## django-debug-toolbar
 # for evaluating query performance 
 

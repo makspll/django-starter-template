@@ -1,3 +1,6 @@
+import os
+from template_project.components.common import BASE_DIR
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 

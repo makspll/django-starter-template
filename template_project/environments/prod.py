@@ -1,4 +1,7 @@
-from .components.common import DEBUG,INSTALLED_APPS,DATABASES
+from template_project.components.common import DEBUG,INSTALLED_APPS,BASE_DIR
+from template_project.components.database import DATABASES
+import os 
+import dj_database_url
 
 DEBUG = False
 
@@ -20,6 +23,5 @@ DROPBOX_OAUTH2_TOKEN = os.environ.get("DROPBOX_OAUTH2_TOKEN")
 
 
 ## configure database via dj_database_url in prod
-import dj_database_url
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 

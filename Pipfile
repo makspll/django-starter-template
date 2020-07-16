@@ -16,7 +16,6 @@ dj-database-url = "*"
 
 [dev-packages]
 pylint = "*"
-django-livesync = "*"
 django-debug-toolbar = "*"
 
 [requires]
