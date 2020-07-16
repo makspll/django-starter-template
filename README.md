@@ -12,7 +12,7 @@ debugging toolbars, live reload, sass/scss compilation, js/css/html minifying an
 check pipfile for package names
 
 ## setup 
-todo - script which configures project
+run `./rename_project.sh {{ your_project_name }}` to rename the project
 
 add a `.env` file in root directory with the following inside:
 ```
