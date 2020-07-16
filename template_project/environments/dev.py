@@ -12,7 +12,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,"media_root")
 ## django-debug-toolbar
 # for evaluating query performance 
 
-MIDDLEWARE += ['debug_toolbar.middleware.DebugToolbarMiddleware','livesync.core.middleware.DjangoLiveSyncMiddleware']
+MIDDLEWARE += ['debug_toolbar.middleware.DebugToolbarMiddleware']
 
 DEFAULT_URL_PATTERNS = [ 
     path('__debug__/',include(debug_toolbar.urls))
