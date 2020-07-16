@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+
+cd "$1" || exit 1
+
+echo "-----> Compressing JS/CSS files via django-compressor"
+python manage.py compress --traceback
+
+echo "-----> Collecting static files"
+python manage.py collectstatic --noinput --traceback 

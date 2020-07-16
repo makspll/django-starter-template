@@ -1,0 +1,3 @@
+ 
+release: python manage.py migrate
+web: gunicorn template_project.wsgi --capture-output --enable-stdio-inheritance --log-file -

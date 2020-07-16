@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-split-settings = "*"
+python-dotenv = "*"
+django-compressor = "*"
+django-libsass = "*"
+brotli = "*"
+django-htmlmin = "*"
+gunicorn = "*"
+dj-database-url = "*"
+
+[dev-packages]
+pylint = "*"
+django-livesync = "*"
+django-debug-toolbar = "*"
+
+[requires]
+python_version = "3.7"
+
+[packages.whitenoise]
+extras = [ "brotli",]
+
+[packages.django-storages]
+extras = [ "dropbox",]

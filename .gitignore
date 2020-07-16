@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# template_project
+
+template_project/environments/local.py
+static_root/
+static_build/
