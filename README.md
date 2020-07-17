@@ -32,9 +32,15 @@ cd to root directory and run:
 to link your js and css/scss/sass files use the following:
 ```
 {% load compress %}
-  #scss/sass
+
+  #scss
   {% compress css %}
   <link rel="stylesheet" href="{% static "personal_site/css/main.scss"%}" type="text/x-scss">
+  {% endcompress %}
+  
+  #sass
+  {% compress css %}
+  <link rel="stylesheet" href="{% static "personal_site/css/main.sass"%}" type="text/x-sass">
   {% endcompress %}
   
   #css
@@ -49,7 +55,6 @@ to link your js and css/scss/sass files use the following:
   <script src="{% static "bootstrap-4.5.0/js/bootstrap.min.js" %}" ></script>
   {% endcompress %}
 
-{% endcompress %}
 ```
 
 ## heroku
