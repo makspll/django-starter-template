@@ -36,15 +36,9 @@ to link your js and css/scss/sass files use the following:
   #scss
   {% compress css %}
   <link rel="stylesheet" href="{% static "personal_site/css/main.scss"%}" type="text/x-scss">
-  {% endcompress %}
-  
   #sass
-  {% compress css %}
-  <link rel="stylesheet" href="{% static "personal_site/css/main.sass"%}" type="text/x-sass">
-  {% endcompress %}
-  
+  <link rel="stylesheet" href="{% static "personal_site/css/main.sass"%}" type="text/x-sass">  
   #css
-  {% compress css %}
   <link rel="stylesheet" href="{% static "personal_site/css/main.css"%}" type="text/css">
   {% endcompress %}
 
