@@ -27,5 +27,30 @@ this file contains additive settings, but if you want to override any settings s
 cd to root directory and run:
 `pipenv install`
 
+## loading js/css
+
+to link your js and css/scss/sass files use the following:
+```
+{% load compress %}
+  #scss/sass
+  {% compress css %}
+  <link rel="stylesheet" href="{% static "personal_site/css/main.scss"%}" type="text/x-scss">
+  {% endcompress %}
+  
+  #css
+  {% compress css %}
+  <link rel="stylesheet" href="{% static "personal_site/css/main.css"%}" type="text/css">
+  {% endcompress %}
+
+  #js
+  {% compress js %}
+  <script src="{% static "jquery-3.5.1/jquery-3.5.1.min.js" %}"></script>
+  <script src="{% static "popper-1.16.0/popper.min.js" %}" ></script>
+  <script src="{% static "bootstrap-4.5.0/js/bootstrap.min.js" %}" ></script>
+  {% endcompress %}
+
+{% endcompress %}
+```
+
 ## heroku
 the project is ready to be deployed on heroku since it contains a procfile and a post_compile hook, just link up your repo to heroku, set the config vars above and deploy.
