@@ -30,11 +30,6 @@ COMPRESS_PRECOMPILERS = [
     ("text/x-scss", "django_libsass.SassCompiler"),
     ('text/x-sass',"django_libsass.SassCompiler")]
 
-COMPRESS_CACHEABLE_PRECOMPILERS = (
-    ("text/x-scss", "django_libsass.SassCompiler"),
-    ('text/x-sass',"django_libsass.SassCompiler"))
-
-
 # filters to apply to js and css files
 JS_FILTERS = [
     'compressor.filters.jsmin.JSMinFilter', # minify js
