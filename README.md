@@ -16,7 +16,7 @@ run `./rename_project.sh {{ your_project_name }}` to rename the project
 
 add a `.env` file in root directory with the following inside:
 ```
-DJANGO_ENV={{ dev/prod }}
+ENV_NAME={{ dev/prod }}
 DJANGO_SECRET_KEY={{ secret key}}
 DROPBOX_OAUTH2_TOKEN={{ dropbox oauth2 key }}
 ```
